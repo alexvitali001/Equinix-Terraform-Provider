@@ -1,11 +1,10 @@
-# CloudRouterPackageType
+# BgpConnectionOperation
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Href** | **string** | Fabric Cloud Router URI | [optional] [default to null]
-**Type_** | **string** | Cloud Router package type | [optional] [default to null]
-**Code** | **string** | Cloud Router package code | [default to null]
+**OperationalStatus** | **string** | BGP IPv4 or IPv6 Connection State operational status | [optional] [default to null]
+**OpStatusChangedAt** | [**time.Time**](time.Time.md) | Last BGP State Update by Date and Time | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

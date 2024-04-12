@@ -8,10 +8,12 @@
  */
 package v4
 
-type RouteFilterRulesBase struct {
-	Name string `json:"name,omitempty"`
-	// Customer-provided Route Filter Rule description
-	Description string `json:"description,omitempty"`
-	Prefix      string `json:"prefix"`
-	PrefixMatch string `json:"prefixMatch,omitempty"`
+// Fabric Cloud Router Package Type
+type CloudRouterPostRequestPackage struct {
+	// Fabric Cloud Router URI
+	Href string `json:"href,omitempty"`
+	// Cloud Router package type
+	Type_ string `json:"type,omitempty"`
+	// Cloud Router package code
+	Code string `json:"code"`
 }

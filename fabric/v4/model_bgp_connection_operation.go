@@ -8,10 +8,14 @@
  */
 package v4
 
-type RouteFilterRulesBase struct {
-	Name string `json:"name,omitempty"`
-	// Customer-provided Route Filter Rule description
-	Description string `json:"description,omitempty"`
-	Prefix      string `json:"prefix"`
-	PrefixMatch string `json:"prefixMatch,omitempty"`
+import (
+	"time"
+)
+
+// BGP IPv4 or IPv6 Connection State operational data
+type BgpConnectionOperation struct {
+	// BGP IPv4 or IPv6 Connection State operational status
+	OperationalStatus string `json:"operationalStatus,omitempty"`
+	// Last BGP State Update by Date and Time
+	OpStatusChangedAt time.Time `json:"opStatusChangedAt,omitempty"`
 }

@@ -8,10 +8,9 @@
  */
 package v4
 
-type RouteFilterRulesBase struct {
-	Name string `json:"name,omitempty"`
-	// Customer-provided Route Filter Rule description
-	Description string `json:"description,omitempty"`
-	Prefix      string `json:"prefix"`
-	PrefixMatch string `json:"prefixMatch,omitempty"`
+// EPT service instance's L2 connections
+type PrecisionTimeServiceConnectionsResponse struct {
+	Pagination *Pagination `json:"pagination,omitempty"`
+	// Data returned from the API call
+	Data []ConnectionLink `json:"data,omitempty"`
 }

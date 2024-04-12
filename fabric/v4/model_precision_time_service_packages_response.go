@@ -8,12 +8,9 @@
  */
 package v4
 
-// Fabric Cloud Router Package Type
-type CloudRouterPackageType struct {
-	// Fabric Cloud Router URI
-	Href string `json:"href,omitempty"`
-	// Cloud Router package type
-	Type_ string `json:"type,omitempty"`
-	// Cloud Router package code
-	Code string `json:"code"`
+// Precision Packages
+type PrecisionTimeServicePackagesResponse struct {
+	Pagination *Pagination `json:"pagination,omitempty"`
+	// Data returned from the API call
+	Data []PrecisionTimePackageResponse `json:"data,omitempty"`
 }

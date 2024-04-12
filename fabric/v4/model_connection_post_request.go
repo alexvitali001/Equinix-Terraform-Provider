@@ -10,18 +10,18 @@ package v4
 
 // Create connection post request
 type ConnectionPostRequest struct {
-	Type_ *ConnectionType `json:"type,omitempty"`
+	Type_ *ConnectionType `json:"type"`
 	// Customer-provided connection name
-	Name  string `json:"name,omitempty"`
+	Name  string `json:"name"`
 	Order *Order `json:"order,omitempty"`
 	// Preferences for notifications on connection configuration or status changes
-	Notifications []SimplifiedNotification `json:"notifications,omitempty"`
+	Notifications []SimplifiedNotification `json:"notifications"`
 	// Connection bandwidth in Mbps
-	Bandwidth  int32                 `json:"bandwidth,omitempty"`
+	Bandwidth  int32                 `json:"bandwidth"`
 	GeoScope   *GeoScopeType         `json:"geoScope,omitempty"`
 	Redundancy *ConnectionRedundancy `json:"redundancy,omitempty"`
-	ASide      *ConnectionSide       `json:"aSide,omitempty"`
-	ZSide      *ConnectionSide       `json:"zSide,omitempty"`
+	ASide      *ConnectionSide       `json:"aSide"`
+	ZSide      *ConnectionSide       `json:"zSide"`
 	Project    *Project              `json:"project,omitempty"`
 	// Connection additional information
 	AdditionalInfo []ConnectionSideAdditionalInfo `json:"additionalInfo,omitempty"`
