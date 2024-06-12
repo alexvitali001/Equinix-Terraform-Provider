@@ -7,6 +7,7 @@ Method | HTTP request | Description
 [**AddToLag**](PortsApi.md#AddToLag) | **Post** /fabric/v4/ports/{portId}/physicalPorts/bulk | Add to Lag
 [**CreateBulkPort**](PortsApi.md#CreateBulkPort) | **Post** /fabric/v4/ports/bulk | Create Port
 [**CreatePort**](PortsApi.md#CreatePort) | **Post** /fabric/v4/ports | Create Port
+[**DeletePort**](PortsApi.md#DeletePort) | **Delete** /fabric/v4/ports/{portId} | Delete a single port
 [**GetPortByUuid**](PortsApi.md#GetPortByUuid) | **Get** /fabric/v4/ports/{portId} | Get Port by uuid
 [**GetPorts**](PortsApi.md#GetPorts) | **Get** /fabric/v4/ports | Get All Ports
 [**GetVlans**](PortsApi.md#GetVlans) | **Get** /fabric/v4/ports/{portUuid}/linkProtocols | Get Vlans
@@ -93,6 +94,34 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **DeletePort**
+> Port DeletePort(ctx, portId)
+Delete a single port
+
+The API provides capability to delete a single port
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **portId** | [**string**](.md)| Port UUID | 
+
+### Return type
+
+[**Port**](Port.md)
+
+### Authorization
+
+[BearerAuth](../README.md#BearerAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

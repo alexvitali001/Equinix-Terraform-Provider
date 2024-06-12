@@ -19,6 +19,7 @@ Name | Type | Description | Notes
 **ProviderConnectionId** | **string** | Provider assigned Connection Id | [optional] [default to null]
 **VirtualNetwork** | [***VirtualNetwork**](VirtualNetwork.md) |  | [optional] [default to null]
 **Interconnection** | [***MetalInterconnection**](MetalInterconnection.md) |  | [optional] [default to null]
+**VpicInterface** | [***VpicInterface**](VpicInterface.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
