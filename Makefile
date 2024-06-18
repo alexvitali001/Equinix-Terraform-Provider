@@ -110,7 +110,6 @@ clean-docs:
 	rm -rf README.md docs
 
 move-docs:
-	mv ${PACKAGE_PREFIX}/${PACKAGE_MAJOR}/README.md .
 	mv ${PACKAGE_PREFIX}/${PACKAGE_MAJOR}/docs .
 
 docs: clean-docs move-docs
