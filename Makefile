@@ -95,6 +95,7 @@ gen-swagger:
 mod:
 	rm -f go.mod go.sum
 	go mod init github.com/${GIT_ORG}/${GIT_REPO}
+	printf "// Deprecated: use github.com/equinix/equinix-sdk-go instead.\n%s" "$$(cat go.mod)" > go.mod
 	go mod tidy
 
 fmt:
@@ -107,7 +108,7 @@ patch-post:
 	done
 
 clean-docs:
-	rm -rf README.md docs
+	rm -rf docs
 
 move-docs:
 	mv ${PACKAGE_PREFIX}/${PACKAGE_MAJOR}/docs .
@@ -116,6 +117,7 @@ docs: clean-docs move-docs
 
 move-other:
 	rm -rf api .travis.yml git_push.sh
+	rm -f ${PACKAGE_PREFIX}/${PACKAGE_MAJOR}/README.md
 	rm -f ${PACKAGE_PREFIX}/${PACKAGE_MAJOR}/.travis.yml
 	mv ${PACKAGE_PREFIX}/${PACKAGE_MAJOR}/api .
 	mv ${PACKAGE_PREFIX}/${PACKAGE_MAJOR}/git_push.sh .
