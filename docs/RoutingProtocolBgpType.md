@@ -10,6 +10,7 @@ Name | Type | Description | Notes
 **CustomerAsn** | **int64** | Customer asn | [optional] [default to null]
 **EquinixAsn** | **int64** | Equinix asn | [optional] [default to null]
 **BgpAuthKey** | **string** | BGP authorization key | [optional] [default to null]
+**AsOverrideEnabled** | **bool** | Enable AS number override | [optional] [default to null]
 **Bfd** | [***RoutingProtocolBfd**](RoutingProtocolBFD.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

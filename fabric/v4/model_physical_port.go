@@ -23,6 +23,8 @@ type PhysicalPort struct {
 	InterfaceType    string                `json:"interfaceType,omitempty"`
 	Tether           *PortTether           `json:"tether,omitempty"`
 	DemarcationPoint *PortDemarcationPoint `json:"demarcationPoint,omitempty"`
+	// Notification preferences
+	Notifications []PortNotification `json:"notifications,omitempty"`
 	// Physical Port additional information
 	AdditionalInfo []PortAdditionalInfo `json:"additionalInfo,omitempty"`
 	Order          *PortOrder           `json:"order,omitempty"`

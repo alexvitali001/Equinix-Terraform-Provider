@@ -5,6 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **PurchaseOrder** | [***PortOrderPurchaseOrder**](PortOrder_purchaseOrder.md) |  | [optional] [default to null]
 **OrderId** | **string** | Order Identification | [optional] [default to null]
+**CustomerReferenceId** | **string** | Customer order reference Id | [optional] [default to null]
 **OrderNumber** | **string** | Order Reference Number | [optional] [default to null]
 **Uuid** | **string** | Equinix-assigned order identifier | [optional] [default to null]
 **Signature** | [***PortOrderSignature**](PortOrder_signature.md) |  | [optional] [default to null]

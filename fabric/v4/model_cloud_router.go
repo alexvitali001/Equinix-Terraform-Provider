@@ -19,7 +19,8 @@ type CloudRouter struct {
 	Project  *Project                       `json:"project,omitempty"`
 	Account  *SimplifiedAccount             `json:"account,omitempty"`
 	// Preferences for notifications on connection configuration or status changes
-	Notifications []SimplifiedNotification `json:"notifications,omitempty"`
+	Notifications           []SimplifiedNotification `json:"notifications,omitempty"`
+	MarketplaceSubscription *MarketplaceSubscription `json:"marketplaceSubscription,omitempty"`
 	// Cloud Routers URI
 	Href string `json:"href,omitempty"`
 	// Equinix-assigned access point identifier

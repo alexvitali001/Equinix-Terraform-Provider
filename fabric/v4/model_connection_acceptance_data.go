@@ -11,4 +11,6 @@ package v4
 // Connection acceptance data
 type ConnectionAcceptanceData struct {
 	ZSide *ConnectionSide `json:"zSide,omitempty"`
+	// Authorization key bandwidth in Mbps
+	ProviderBandwidth int32 `json:"providerBandwidth,omitempty"`
 }

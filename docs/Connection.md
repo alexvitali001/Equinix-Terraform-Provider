@@ -22,6 +22,7 @@ Name | Type | Description | Notes
 **Direction** | [***ConnectionDirection**](ConnectionDirection.md) |  | [optional] [default to null]
 **ASide** | [***ConnectionSide**](ConnectionSide.md) |  | [default to null]
 **ZSide** | [***ConnectionSide**](ConnectionSide.md) |  | [default to null]
+**MarketplaceSubscription** | [***MarketplaceSubscription**](marketplaceSubscription.md) |  | [optional] [default to null]
 **AdditionalInfo** | [**[]ConnectionSideAdditionalInfo**](ConnectionSideAdditionalInfo.md) | Connection additional information | [optional] [default to null]
 **Project** | [***Project**](Project.md) |  | [optional] [default to null]
 

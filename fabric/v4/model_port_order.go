@@ -12,6 +12,8 @@ type PortOrder struct {
 	PurchaseOrder *PortOrderPurchaseOrder `json:"purchaseOrder,omitempty"`
 	// Order Identification
 	OrderId string `json:"orderId,omitempty"`
+	// Customer order reference Id
+	CustomerReferenceId string `json:"customerReferenceId,omitempty"`
 	// Order Reference Number
 	OrderNumber string `json:"orderNumber,omitempty"`
 	// Equinix-assigned order identifier

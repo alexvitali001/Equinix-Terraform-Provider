@@ -14,6 +14,7 @@ Name | Type | Description | Notes
 **ZSide** | [***ConnectionSide**](ConnectionSide.md) |  | [default to null]
 **Project** | [***Project**](Project.md) |  | [optional] [default to null]
 **AdditionalInfo** | [**[]ConnectionSideAdditionalInfo**](ConnectionSideAdditionalInfo.md) | Connection additional information | [optional] [default to null]
+**MarketplaceSubscription** | [***MarketplaceSubscription**](marketplaceSubscription.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -10,6 +10,7 @@ Name | Type | Description | Notes
 **CustomerAsn** | **int64** | Customer asn | [optional] [default to null]
 **EquinixAsn** | **int64** | Equinix asn | [optional] [default to null]
 **BgpAuthKey** | **string** | BGP authorization key | [optional] [default to null]
+**AsOverrideEnabled** | **bool** | Enable AS number override | [optional] [default to null]
 **Bfd** | [***RoutingProtocolBfd**](RoutingProtocolBFD.md) |  | [optional] [default to null]
 **Href** | **string** | Routing Protocol URI | [optional] [default to null]
 **Uuid** | **string** | Routing protocol identifier | [optional] [default to null]

@@ -19,6 +19,8 @@ type RoutingProtocolBgpType struct {
 	// Equinix asn
 	EquinixAsn int64 `json:"equinixAsn,omitempty"`
 	// BGP authorization key
-	BgpAuthKey string              `json:"bgpAuthKey,omitempty"`
-	Bfd        *RoutingProtocolBfd `json:"bfd,omitempty"`
+	BgpAuthKey string `json:"bgpAuthKey,omitempty"`
+	// Enable AS number override
+	AsOverrideEnabled bool                `json:"asOverrideEnabled,omitempty"`
+	Bfd               *RoutingProtocolBfd `json:"bfd,omitempty"`
 }

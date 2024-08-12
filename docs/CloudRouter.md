@@ -11,6 +11,7 @@ Name | Type | Description | Notes
 **Project** | [***Project**](Project.md) |  | [optional] [default to null]
 **Account** | [***SimplifiedAccount**](SimplifiedAccount.md) |  | [optional] [default to null]
 **Notifications** | [**[]SimplifiedNotification**](SimplifiedNotification.md) | Preferences for notifications on connection configuration or status changes | [optional] [default to null]
+**MarketplaceSubscription** | [***MarketplaceSubscription**](marketplaceSubscription.md) |  | [optional] [default to null]
 **Href** | **string** | Cloud Routers URI | [optional] [default to null]
 **Uuid** | **string** | Equinix-assigned access point identifier | [optional] [default to null]
 **State** | [***CloudRouterAccessPointState**](CloudRouterAccessPointState.md) |  | [optional] [default to null]

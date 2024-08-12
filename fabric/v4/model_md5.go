@@ -10,6 +10,6 @@ package v4
 
 type Md5 struct {
 	Type_    string `json:"type,omitempty"`
-	Id       string `json:"id,omitempty"`
+	Id       int32  `json:"id,omitempty"`
 	Password string `json:"password,omitempty"`
 }

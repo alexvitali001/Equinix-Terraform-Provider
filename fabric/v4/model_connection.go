@@ -32,10 +32,11 @@ type Connection struct {
 	GeoScope   *GeoScopeType         `json:"geoScope,omitempty"`
 	Redundancy *ConnectionRedundancy `json:"redundancy,omitempty"`
 	// Connection property derived from access point locations
-	IsRemote  bool                 `json:"isRemote,omitempty"`
-	Direction *ConnectionDirection `json:"direction,omitempty"`
-	ASide     *ConnectionSide      `json:"aSide"`
-	ZSide     *ConnectionSide      `json:"zSide"`
+	IsRemote                bool                     `json:"isRemote,omitempty"`
+	Direction               *ConnectionDirection     `json:"direction,omitempty"`
+	ASide                   *ConnectionSide          `json:"aSide"`
+	ZSide                   *ConnectionSide          `json:"zSide"`
+	MarketplaceSubscription *MarketplaceSubscription `json:"marketplaceSubscription,omitempty"`
 	// Connection additional information
 	AdditionalInfo []ConnectionSideAdditionalInfo `json:"additionalInfo,omitempty"`
 	Project        *Project                       `json:"project,omitempty"`

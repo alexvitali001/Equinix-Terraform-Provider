@@ -19,5 +19,6 @@ type CloudRouterPostRequest struct {
 	Project  *Project                       `json:"project,omitempty"`
 	Account  *SimplifiedAccount             `json:"account,omitempty"`
 	// Preferences for notifications on connection configuration or status changes
-	Notifications []SimplifiedNotification `json:"notifications,omitempty"`
+	Notifications           []SimplifiedNotification `json:"notifications,omitempty"`
+	MarketplaceSubscription *MarketplaceSubscription `json:"marketplaceSubscription,omitempty"`
 }

@@ -16,6 +16,10 @@ type BgpConnectionIpv6 struct {
 	// Admin status for the BGP session
 	Enabled bool `json:"enabled"`
 	// AS path prepend count
-	OutboundASPrependCount int64                   `json:"outboundASPrependCount,omitempty"`
-	Operation              *BgpConnectionOperation `json:"operation,omitempty"`
+	OutboundASPrependCount int64 `json:"outboundASPrependCount,omitempty"`
+	// inbound Multi Exit Discriminator attribute
+	InboundMED int64 `json:"inboundMED,omitempty"`
+	// inbound Multi Exit Discriminator attribute
+	OutboundMED int64                   `json:"outboundMED,omitempty"`
+	Operation   *BgpConnectionOperation `json:"operation,omitempty"`
 }

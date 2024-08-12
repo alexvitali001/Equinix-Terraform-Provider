@@ -12,6 +12,7 @@ Name | Type | Description | Notes
 **InterfaceType** | **string** | Physical Port Interface Type | [optional] [default to null]
 **Tether** | [***PortTether**](PortTether.md) |  | [optional] [default to null]
 **DemarcationPoint** | [***PortDemarcationPoint**](PortDemarcationPoint.md) |  | [optional] [default to null]
+**Notifications** | [**[]PortNotification**](PortNotification.md) | Notification preferences | [optional] [default to null]
 **AdditionalInfo** | [**[]PortAdditionalInfo**](PortAdditionalInfo.md) | Physical Port additional information | [optional] [default to null]
 **Order** | [***PortOrder**](PortOrder.md) |  | [optional] [default to null]
 **Operation** | [***PortOperation**](PortOperation.md) |  | [optional] [default to null]

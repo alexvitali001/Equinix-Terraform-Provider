@@ -10,6 +10,7 @@ Method | HTTP request | Description
 [**GetTimeServicesConnectionsByServiceId**](PrecisionTimeApi.md#GetTimeServicesConnectionsByServiceId) | **Get** /fabric/v4/timeServices/{serviceId}/connections | Get Connection Links
 [**GetTimeServicesPackageByCode**](PrecisionTimeApi.md#GetTimeServicesPackageByCode) | **Get** /fabric/v4/timeServicePackages/{packageCode} | Get Package By Code
 [**GetTimeServicesPackages**](PrecisionTimeApi.md#GetTimeServicesPackages) | **Get** /fabric/v4/timeServicePackages | Get Packages
+[**SearchTimeServices**](PrecisionTimeApi.md#SearchTimeServices) | **Post** /fabric/v4/timeServices/search | Search Time Services
 [**UpdateTimeServicesById**](PrecisionTimeApi.md#UpdateTimeServicesById) | **Patch** /fabric/v4/timeServices/{serviceId} | Patch time service
 
 # **CreateTimeServices**
@@ -172,6 +173,34 @@ This endpoint does not need any parameter.
 ### HTTP request headers
 
  - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **SearchTimeServices**
+> ServiceSearchResponse SearchTimeServices(ctx, body)
+Search Time Services
+
+The API provides capability to get list of user's Time Services using search criteria, including optional filtering, pagination and sorting
+
+### Required Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
+  **body** | [**TimeServicesSearchRequest**](TimeServicesSearchRequest.md)|  | 
+
+### Return type
+
+[**ServiceSearchResponse**](ServiceSearchResponse.md)
+
+### Authorization
+
+[BearerAuth](../README.md#BearerAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

@@ -24,5 +24,6 @@ type ConnectionPostRequest struct {
 	ZSide      *ConnectionSide       `json:"zSide"`
 	Project    *Project              `json:"project,omitempty"`
 	// Connection additional information
-	AdditionalInfo []ConnectionSideAdditionalInfo `json:"additionalInfo,omitempty"`
+	AdditionalInfo          []ConnectionSideAdditionalInfo `json:"additionalInfo,omitempty"`
+	MarketplaceSubscription *MarketplaceSubscription       `json:"marketplaceSubscription,omitempty"`
 }
